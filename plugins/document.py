@@ -23,9 +23,9 @@ async def Document_Downloader(client, message):
     try:
         if TgFileDownloadlist[user_id]:
             await message.reply_text(
-                "`Multiple Telegram File Download is Not allowed at a same time !!"
-                "\nPlease Wait For Complete Your Download `")
-            return
+                "`يفضل أن ترسل ملفاً ملفاً "
+                "\nلكن البوت سيعمل بأي حال `")
+            pass
     except :
         pass
         
