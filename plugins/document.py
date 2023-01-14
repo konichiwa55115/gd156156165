@@ -19,16 +19,8 @@ async def Document_Downloader(client, message):
 
     await extrastuffs(client,message)
     user_id = str(message.from_user.id)
-
+    
     try:
-        if TgFileDownloadlist[user_id]:
-            await message.reply_text(
-                "`يفضل أن ترسل ملفاً ملفاً "
-                "\nلكن البوت سيعمل بأي حال `")
-            pass
-    except :
-        pass
-        
     sentm = await message.reply_text("Hold on !! Preparing For Download...")
     s_time = time.time()
     try:
