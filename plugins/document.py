@@ -32,11 +32,8 @@ async def Document_Downloader(client, message):
                         "Downloading", sentm, s_time,client,user_id))
         if filename is not None:
             await upload_handler(filename, sentm)
-        else:
-            if TgFileDownloadlist[user_id] == False:
-                await sentm.edit(f"`Download Cancelled`")
-            else:
-                await sentm.edit(f"`Download Stopped Due To Some Unknow reason`")
+        else
+            await sentm.edit(f"`Download Stopped Due To Some Unknow reason`")
         
     except FloodWait as fw:
         LOGGER.error(fw)
